@@ -1,0 +1,5 @@
+; Program 23: Find 1's complement of 8-bit number
+MOV AL, 25H
+NOT AL
+HLT
+

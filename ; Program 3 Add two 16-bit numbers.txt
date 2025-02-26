@@ -1,0 +1,6 @@
+; Program 3: Add two 16-bit numbers
+MOV AX, 1234H
+MOV BX, 5678H
+ADD AX, BX
+HLT
+

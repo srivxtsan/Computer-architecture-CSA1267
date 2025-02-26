@@ -1,0 +1,5 @@
+; Program 27: Swap two 8-bit numbers
+MOV AL, 12H
+MOV BL, 34H
+XCHG AL, BL
+HLT

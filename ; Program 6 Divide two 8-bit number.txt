@@ -1,0 +1,6 @@
+; Program 6: Divide two 8-bit numbers
+MOV AX, 300H  ; Dividend in AX
+MOV BL, 15H   ; Divisor
+DIV BL        ; AL = Quotient, AH = Remainder
+HLT
+

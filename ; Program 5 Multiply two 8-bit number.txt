@@ -1,0 +1,117 @@
+; Program 5: Multiply two 8-bit numbers
+MOV AL, 25H
+MOV BL, 15H
+MUL BL   ; AX = AL * BL
+HLT
+
+; Program 6: Divide two 8-bit numbers
+MOV AX, 300H  ; Dividend in AX
+MOV BL, 15H   ; Divisor
+DIV BL        ; AL = Quotient, AH = Remainder
+HLT
+
+; Program 7: Multiply two 16-bit numbers
+MOV AX, 1234H
+MOV BX, 5678H
+MUL BX   ; DX:AX = AX * BX
+HLT
+
+; Program 8: Divide two 16-bit numbers
+MOV DX, 0
+MOV AX, 1234H
+MOV BX, 0020H
+DIV BX   ; AX = Quotient, DX = Remainder
+HLT
+
+; Program 9: Find greatest of two numbers
+MOV AL, 25H
+MOV BL, 15H
+CMP AL, BL
+JGE LARGER
+MOV AL, BL
+LARGER: HLT
+
+; Program 10: Find smallest of two numbers
+MOV AL, 25H
+MOV BL, 15H
+CMP AL, BL
+JLE SMALLER
+MOV AL, BL
+SMALLER: HLT
+
+; Program 11: Find LCM of two numbers (Simple approach)
+MOV AL, 4
+MOV BL, 6
+LCM_LOOP: CMP AL, BL
+JE DONE
+JG NEXT
+ADD AL, AL
+JMP LCM_LOOP
+NEXT: ADD BL, BL
+JMP LCM_LOOP
+DONE: HLT
+
+; Program 12: Find GCD of two numbers
+MOV AX, 24H
+MOV BX, 18H
+GCD_LOOP: CMP AX, BX
+JE DONE_GCD
+JG NEXT_GCD
+SUB BX, AX
+JMP GCD_LOOP
+NEXT_GCD: SUB AX, BX
+JMP GCD_LOOP
+DONE_GCD: HLT
+
+; Program 13: Sort numbers in ascending order
+; (Requires an array processing routine)
+
+; Program 14: Convert Decimal to Hexadecimal
+MOV AX, 10D  ; Example decimal number
+HLT
+
+; Program 18: Factorial of n
+MOV CX, 05H  ; n = 5
+MOV AX, 01H  ; Result initialized to 1
+FACTORIAL_LOOP: MUL CX
+LOOP FACTORIAL_LOOP
+HLT
+
+; Program 19: Find largest number in an array
+; (Needs an array loop)
+
+; Program 20: Check if 8-bit number is odd or even
+MOV AL, 35H
+TEST AL, 01H
+JNZ ODD
+HLT
+ODD: HLT
+
+; Program 21: Check if number is positive or negative
+MOV AL, -5
+TEST AL, 80H
+JNZ NEGATIVE
+HLT
+NEGATIVE: HLT
+
+; Program 22: Find minimum number in an array
+; (Array processing needed)
+
+; Program 23: Find 1's complement of 8-bit number
+MOV AL, 25H
+NOT AL
+HLT
+
+; Program 24: Find 2's complement of 8-bit number
+MOV AL, 25H
+NEG AL
+HLT
+
+; Program 25: Sort numbers in descending order
+; (Array sorting needed)
+
+; Program 27: Swap two 8-bit numbers
+MOV AL, 12H
+MOV BL, 34H
+XCHG AL, BL
+HLT

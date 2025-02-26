@@ -1,0 +1,7 @@
+; Program 8: Divide two 16-bit numbers
+MOV DX, 0
+MOV AX, 1234H
+MOV BX, 0020H
+DIV BX   ; AX = Quotient, DX = Remainder
+HLT
+

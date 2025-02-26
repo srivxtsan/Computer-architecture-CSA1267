@@ -1,0 +1,7 @@
+; Program 20: Check if 8-bit number is odd or even
+MOV AL, 35H
+TEST AL, 01H
+JNZ ODD
+HLT
+ODD: HLT
+

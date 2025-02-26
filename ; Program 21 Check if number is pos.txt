@@ -1,0 +1,9 @@
+; Program 21: Check if number is positive or negative
+MOV AL, -5
+TEST AL, 80H
+JNZ NEGATIVE
+HLT
+NEGATIVE: HLT
+
+
+

@@ -1,0 +1,7 @@
+; Program 24: Find 2's complement of 8-bit number
+MOV AL, 25H
+NEG AL
+HLT
+
+
+

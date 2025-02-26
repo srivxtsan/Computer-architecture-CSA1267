@@ -1,0 +1,12 @@
+; Program 11: Find LCM of two numbers (Simple approach)
+MOV AL, 4
+MOV BL, 6
+LCM_LOOP: CMP AL, BL
+JE DONE
+JG NEXT
+ADD AL, AL
+JMP LCM_LOOP
+NEXT: ADD BL, BL
+JMP LCM_LOOP
+DONE: HLT
+

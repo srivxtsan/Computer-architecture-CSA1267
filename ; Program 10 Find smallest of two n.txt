@@ -1,0 +1,8 @@
+; Program 10: Find smallest of two numbers
+MOV AL, 25H
+MOV BL, 15H
+CMP AL, BL
+JLE SMALLER
+MOV AL, BL
+SMALLER: HLT
+

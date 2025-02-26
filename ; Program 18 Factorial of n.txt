@@ -1,0 +1,7 @@
+; Program 18: Factorial of n
+MOV CX, 05H  ; n = 5
+MOV AX, 01H  ; Result initialized to 1
+FACTORIAL_LOOP: MUL CX
+LOOP FACTORIAL_LOOP
+HLT
+

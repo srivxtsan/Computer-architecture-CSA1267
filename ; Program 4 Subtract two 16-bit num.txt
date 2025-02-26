@@ -1,0 +1,6 @@
+; Program 4: Subtract two 16-bit numbers
+MOV AX, 5678H
+MOV BX, 1234H
+SUB AX, BX
+HLT
+

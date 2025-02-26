@@ -1,0 +1,5 @@
+; Program 7: Multiply two 16-bit numbers
+MOV AX, 1234H
+MOV BX, 5678H
+MUL BX   ; DX:AX = AX * BX
+HLT

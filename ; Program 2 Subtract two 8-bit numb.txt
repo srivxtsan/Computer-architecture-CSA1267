@@ -1,0 +1,5 @@
+; Program 2: Subtract two 8-bit numbers
+MOV AL, 25H
+MOV BL, 15H
+SUB AL, BL   ; AL = AL - BL
+HLT

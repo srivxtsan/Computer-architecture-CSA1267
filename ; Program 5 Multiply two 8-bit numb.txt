@@ -1,0 +1,6 @@
+; Program 5: Multiply two 8-bit numbers
+MOV AL, 25H
+MOV BL, 15H
+MUL BL   ; AX = AL * BL
+HLT
+

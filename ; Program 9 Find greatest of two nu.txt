@@ -1,0 +1,8 @@
+; Program 9: Find greatest of two numbers
+MOV AL, 25H
+MOV BL, 15H
+CMP AL, BL
+JGE LARGER
+MOV AL, BL
+LARGER: HLT
+
